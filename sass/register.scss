@@ -1,0 +1,283 @@
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+// body {
+//     line-height: 1;
+// }
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+
+em {
+    font-style: normal;
+}
+
+input,
+a {
+    outline: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.hide {
+    display: none
+}
+
+// 使a出现下划线
+.text_line:hover {
+    text-decoration: underline;
+}
+
+/* 以上为重置样式 */
+
+
+a {
+    text-decoration: none;
+    color: #666;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.w-main {
+    width: 990px;
+    height: 701px;
+    margin: 0 auto;
+    background: 0 0;
+
+    input::-webkit-input-placeholder {
+        color: rgb(192, 187, 187);
+    }
+
+    .search-left {
+        margin-top: 52px;
+        overflow: hidden;
+    }
+
+
+    .main-box {
+        border: 1px solid #f0f0f0;
+        background: #fff;
+        min-height: 260px;
+        margin: 40px auto 0;
+
+        .main-box-content {
+            padding: 50px 0;
+
+            h5 {
+                font-weight: 400;
+                font-size: 28px;
+                color: #000;
+                padding-bottom: 30px;
+                text-align: center;
+            }
+
+            .content-box {
+                width: 338px;
+                margin: 0 auto;
+
+                p {
+                    margin-top: 15px;
+                    line-height: 38px;
+                    position: relative;
+                    overflow: hidden;
+
+                    em {
+                        position: absolute;
+                        top: 12px;
+                        left: 11px;
+
+
+                    }
+
+                    input {
+                        width: 301px;
+                        height: 38px;
+                        line-height: 38px;
+                        border: 1px solid #e8e8e8;
+                        font-size: 12px;
+                        background-color: transparent;
+                        padding-left: 35px;
+
+                    }
+
+                    .ico {
+                        top: 12px;
+                        right: 11px;
+                        position: absolute;
+                    }
+
+                    .eye-close {
+                        display: block;
+                        background-image: url(../img/d1.png);
+                        background-position: -142px -92px;
+                        background-size: 220px;
+                        width: 16px;
+                        height: 16px;
+                    }
+
+                    .eye-open {
+                        display: block;
+                        background-image: url(../img/d1.png);
+                        background-position: -188px -137px;
+                        background-size: 220px;
+                        width: 16px;
+                        height: 16px;
+                    }
+
+                    .r_imgcount {
+                        width: 98px;
+                        cursor: pointer;
+                        height: 38px;
+                    }
+
+                    // -----------em
+                    .phone {
+                        display: block;
+                        background-image: url(../img/a.png);
+                        background-position: -576px -25px;
+                        background-size: 589px;
+                        width: 12px;
+                        height: 16px;
+                    }
+
+                    .code {
+                        display: block;
+                        background-image: url(../img/a.png);
+                        background-position: -576px 0;
+                        background-size: 589px;
+                        width: 13px;
+                        height: 15px;
+                    }
+
+                    .pwd {
+                        display: block;
+                        background-image: url(../img/a.png);
+                        background-position: -576px -51px;
+                        background-size: 589px;
+                        width: 12px;
+                        height: 15px;
+
+                    }
+
+                    // ------------input
+                    .imgcount {
+                        width: 193px;
+                    }
+
+                    .yzm {
+                        width: 193px;
+                    }
+
+                    .yzmTxt {
+                        float: right;
+                        width: 98px;
+                        cursor: pointer;
+                        height: 38px;
+                        background: #fff;
+                        border: 1px solid #ddd;
+                        color: #333 !important;
+                        font-size: 12px;
+                        padding: 0;
+                    }
+                }
+
+                i {
+                    line-height: 16px;
+                    font-size: 10px;
+                    color: #d00000;
+                    margin-top: 8px;
+                    display: block;
+                    margin-bottom: -7px;
+                    font-weight: 700;
+                    background: url(../img/error.png) no-repeat left center;
+                    padding-left: 18px;
+                }
+            }
+
+            .register {
+                width: 340px;
+                height: 38px;
+                font-size: 14px;
+                background: #b32424;
+                color: #fff;
+                border: 0;
+                border-radius: 2px;
+                display: block;
+                margin: 35px auto 0;
+                line-height: 38px;
+                text-align: center;
+            }
+
+            .condition {
+                font-size: 12px;
+                color: #999;
+                padding-bottom: 20px;
+
+                a {
+                    color: #000;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+$cursor:pointer;
+#wrap-header{
+    width: 100%;
+    background-color: #960607;
+    position: relative;
+    #header{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    a {
+        display: block;
+    }
+
+    div {
+        position: absolute;
+        top: 50%;
+        right: 44px;
+        margin-top: -16px;
+        margin-left: -16px;
+        cursor: $cursor;
+        width: 32px;
+        height: 32px;
+        background-image: url("../img/a.png");
+        background-position: -456px -414px;
+        background-size: 589px;
+    }
+}

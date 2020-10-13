@@ -1,0 +1,200 @@
+.main {
+    width: 100%;
+    min-width: 990px;
+    margin: 0 auto;
+    background: #fff;
+
+    .main-head {
+        width: 100%;
+        height: 100px;
+
+        .main-head-logo {
+            width: 1000px;
+            margin: 25px auto 0;
+
+            a {
+                width: 121px;
+                display: block;
+            }
+        }
+    }
+
+    .main-content {
+        position: relative;
+        width: 100%;
+        height: 580px;
+        background: #a5a5a5;
+
+        .login-bg {
+            background-image: url(../img/login-bg.jpg);
+            background-color: #ffffff;
+
+            position: absolute;
+            width: 100%;
+            height: 580px;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        .main-login {
+            width: 1000px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+
+            .login-box {
+                width: 380px;
+                height: 460px;
+                position: absolute;
+                right: 0;
+                top: 50px;
+                border: none;
+                background-color: #fff;
+
+                .login-tab {
+                    overflow: hidden;
+                    width: 270px;
+                    margin: 0 auto;
+                    padding: 40px 0 20px;
+
+                    span {
+                        height: 26px;
+                        line-height: 26px;
+                        font-size: 20px;
+                        color: grey;
+                        float: left;
+                        width: 134px;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+
+                    .on {
+                        color: #cc5252;
+                    }
+
+                    em {
+                        float: left;
+                        background: #ddd;
+                        height: 24px;
+                        font-size: 0;
+                        width: 1px;
+                        margin-top: 1px;
+                    }
+                }
+
+                .user-login {
+                    .message {
+                        width: 300px;
+                        margin: 0 auto;
+
+                        p {
+                            overflow: hidden;
+
+                            input {
+                                width: 100%;
+                                display: block;
+                                box-sizing: border-box;
+                                height: 44px;
+                                margin-top: 12px;
+                                line-height: 44px;
+                                border: 1px solid #ddd;
+                                padding-left: 10px;
+                            }
+
+                            input::-webkit-input-placeholder {
+                                color: rgb(192, 187, 187);
+                            }
+
+                            i {
+                                font-size: 14px;
+                                color: #cc5252;
+                                line-height: 19px;
+                                margin-top: 8px;
+                                display: block;
+                                padding-left: 10px;
+                            }
+                        }
+
+                        .loginbtn {
+                            background: #cc5252;
+                            text-align: center;
+                            font-size: 18px;
+                            color: #fff;
+                            margin-bottom: 12px;
+                            border: none;
+                            padding: 0;
+                            cursor: pointer;
+
+                            width: 100%;
+                            display: block;
+                            box-sizing: border-box;
+                            height: 44px;
+                            margin-top: 12px;
+                            line-height: 44px;
+                        }
+
+                        .bot {
+                            a {
+                                color: #999;
+                                font-size: 14px;
+                            }
+                        }
+
+                        .pos {
+                            position: absolute;
+                            bottom: 24px;
+                            right: 40px;
+                            padding-top: 11px;
+
+                            span {
+                                float: left;
+                                font-size: 16px;
+                                color: #999;
+                                line-height: 22px;
+                                position: relative;
+
+                                i {
+                                    position: absolute;
+                                    top: -16px;
+                                    left: 105px;
+
+                                    display: block;
+                                    background-image: url(../img/a.png);
+                                    background-position: -371px -270px;
+                                    background-size: 589px;
+                                    width: 22px;
+                                    height: 15px;
+                                }
+                            }
+
+                            em {
+                                font-size: 16px;
+                                color: #ccc;
+                                line-height: 22px;
+                                float: left;
+                                width: 25px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main-footer {
+        border-top: 1px solid #eee;
+        padding: 50px 0;
+        width: 640px;
+        margin: 0 auto;
+        p{
+            display: block;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            line-height: 20px;
+        }
+    }
+}

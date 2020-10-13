@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>万表网</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2116392_hs0xnkbg6rw.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2116392_80c7mnt04cw.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -24,7 +29,7 @@
     <div id="wrap-top">
         <div id="top">
             <div class="top-left fl">
-                <a target="_blank" href="">正品保障，免息分期！</a>
+                <a target="_blank" href="html/details.html">正品保障，免息分期！</a>
             </div>
             <div class="top-right fr">
                 <div class="top-login fl">
@@ -408,7 +413,7 @@
     </div>
 
     <!-- fixednav -->
-    <div id="wrap-nav" class="fixednav">
+    <div id="wrap-nav" class="fixednav" style="display: none;">
         <div id="nav" class="clear_float">
             <div class="nav-left fl">
                 <a target="_blank" class="allshop" href="">
@@ -475,11 +480,33 @@
     <!-- main -->
     <div id="wrap-main">
         <!-- 轮播图 -->
-        <div class="wrap-lunbobanner">
-            <div class="lunbo-banner">
-
+        <!-- <div class="wrap-lunbobanner"> -->
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/lunbo1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/lunbo2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/lunbo3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/lunbo4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/lunbo5.jpg" alt="">
+                </div>
             </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next zindex-up"></div>
+            <div class="swiper-button-prev zindex-up"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
+        <!-- </div> -->
         <div id="main" class="allblock clear_float">
             <div class="main-clock_1">
                 <a href="">
@@ -563,6 +590,84 @@
                             <p>每周二/四20点准时开拍</p>
                         </div>
                     </a>
+                    <!-- Swiper -->
+                    
+                    <div class="swiper-container2 fr">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide lb2">
+                                <div class="list">
+                                    <img src="./img/lunbo6.jpg" alt="">
+                                    <p>欧米茄</p>
+                                    <div class="row">
+                                        <span class="span1 ">￥164880</span>
+                                        <span class="span2 ">￥169000</span>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <img src="./img/lunbo6.jpg" alt="">
+                                    <p>欧米茄</p>
+                                    <div class="row">
+                                        <span class="span1 ">￥164880</span>
+                                        <span class="span2 ">￥169000</span>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <img src="./img/lunbo6.jpg" alt="">
+                                    <p>欧米茄</p>
+                                    <div class="row">
+                                        <span class="span1 ">￥164880</span>
+                                        <span class="span2 ">￥169000</span>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <img src="./img/lunbo6.jpg" alt="">
+                                    <p>欧米茄</p>
+                                    <div class="row">
+                                        <span class="span1 ">￥164880</span>
+                                        <span class="span2 ">￥169000</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide lb2">
+                                <div class="list">
+                                    <img src="./img/lunbo6.jpg" alt="">
+                                    <p>欧米茄</p>
+                                    <div class="row">
+                                        <span class="span1 ">￥164880</span>
+                                        <span class="span2 ">￥169000</span>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <img src="./img/lunbo6.jpg" alt="">
+                                    <p>欧米茄</p>
+                                    <div class="row">
+                                        <span class="span1 ">￥164880</span>
+                                        <span class="span2 ">￥169000</span>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <img src="./img/lunbo6.jpg" alt="">
+                                    <p>欧米茄</p>
+                                    <div class="row">
+                                        <span class="span1 ">￥164880</span>
+                                        <span class="span2 ">￥169000</span>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <img src="./img/lunbo6.jpg" alt="">
+                                    <p>欧米茄</p>
+                                    <div class="row">
+                                        <span class="span1 ">￥164880</span>
+                                        <span class="span2 ">￥169000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+              
+                    </div>
                 </div>
 
             </div>
@@ -649,16 +754,16 @@
                     <h3 class="fl">
                         排行榜
                     </h3>
-                    <ul class="fl">
-                        <li>男表<i></i></li>
-                        <li>女表<i></i></li>
-                        <li>潮表<i></i></li>
+                    <ul class="xxk fl">
+                        <li>男表<i style="display: block;"></i></li>
+                        <li>女表<i style="display: none;"></i></li>
+                        <li>潮表<i style="display: none;"></i></li>
                     </ul>
                     <a href="" class="seemore fr">查看更多></a>
                 </div>
-                <div class="clock_4 content clear_float">
+                <div class="clock_4 content clear_float" style="height: 280px;">
 
-                    <div class="list1 clear_float" style="display: none;">
+                    <div class="c4list list1 clear_float" style="display: block;">
                         <a href="" class="cLeft fl">
                             <p class="p_img"><img src="./img/clock-16.jpg" alt=""></p>
                             <div class="p_txt">
@@ -741,7 +846,7 @@
                         </div>
                     </div>
 
-                    <div class="list2 clear_float" style="display: none;">
+                    <div class="c4list list2 clear_float" style="display: none;">
                         <a href="" class="cLeft fl">
                             <p class="p_img"><img src="./img/clock-20.jpg" alt=""></p>
                             <div class="p_txt">
@@ -824,7 +929,7 @@
                         </div>
                     </div>
 
-                    <div class="list3 clear_float" style="display: block;">
+                    <div class="c4list list3 clear_float" style="display: none;">
                         <a href="" class="cLeft fl">
                             <p class="p_img"><img src="./img/clock-21.jpg" alt=""></p>
                             <div class="p_txt">
@@ -939,14 +1044,13 @@
                 </div>
                 <!-- content -->
                 <div class="clock_5 content clear_float">
-
                     <div class="wrap-list1" style="display:block;">
                         <div class="con-top list1">
                             <a href="" class="boxshadow">
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -956,7 +1060,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -966,7 +1070,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -976,7 +1080,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -992,7 +1096,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1002,7 +1106,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1012,7 +1116,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1022,7 +1126,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1038,7 +1142,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1048,7 +1152,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1058,7 +1162,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1068,7 +1172,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1084,7 +1188,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1094,7 +1198,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1104,7 +1208,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1114,7 +1218,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1130,7 +1234,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1140,7 +1244,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1150,7 +1254,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1160,7 +1264,7 @@
                                 <p class="p-img">
                                     <img src="./img/bigimg1.jpg" alt="">
                                 </p>
-                                <div class="n-txt" style="display: block;">
+                                <div class="n-txt">
                                     <p>
                                         <img src="./img/smallimg.jpg" alt="">
                                     </p>
@@ -1268,12 +1372,27 @@
                     </div>
                 </div>
             </div>
-            <div class="main-clock_7">
+            <div class="main-clock_7 clear_float">
                 <div class="clock_7 top">
                     <h3>猜你喜欢</h3>
                 </div>
                 <div class="clock_7 content">
-
+                    <a href="">
+                        <p class="g-img"> 
+                            <img src="./img/goods.jpg" alt="">
+                        </p>
+                        <p class="p1">日方东兴</p>
+                        <p class="p2">明示系列日方东兴</p>
+                        <div class="fenqi">
+                            <em>月付</em>
+                            <span class="sp1">￥413.89</span>
+                            <span class="sp2">￥7897</span>
+                        </div>
+                    </a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
                 </div>
             </div>
         </div>
@@ -1292,7 +1411,7 @@
         </div>
         <div id="footer-center">
             <div class="foot-center">
-                <div class="tel">
+                <div class="tel fl">
                     <p class="p1">客服电话</p>
                     <p class="p2">400-883-2688</p>
                     <p class="p3">外呼电话 020-83931899</p>
@@ -1300,9 +1419,171 @@
                         <a href="">售后维修</a>
                     </p>
                 </div>
+                <div class="list-middle fl">
+                    <dl>
+                        <dt>新手指南</dt>
+                        <dd>
+                            <a target="_blank" href="">注册新会员</a>
+                            <a target="_blank" href="">购物流程</a>
+                            <a target="_blank" href="">发票说明</a>
+                            <a target="_blank" href="">支付问题</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>支付</dt>
+                        <dd>
+                            <a target="_blank" href="">支付方式</a>
+                            <a target="_blank" href="">分期付款</a>
+                            <a target="_blank" href="">发票说明</a>
+                            <a target="_blank" href="">支付问题</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>配送</dt>
+                        <dd>
+                            <a target="_blank" href="">包裹签收</a>
+                            <a target="_blank" href="">配送方式</a>
+                            <a target="_blank" href="">配送说明</a>
+                            <a target="_blank" href="">自提流程</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>万表保障</dt>
+                        <dd>
+                            <a target="_blank" href="">正品保障</a>
+                            <a target="_blank" href="">售后服务</a>
+                            <a target="_blank" href="">价格保护</a>
+                            <a target="_blank" href="">七天退换说明</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt style="color:#ccaa7a ;">开放合作</dt>
+                        <dd>
+                            <a target="_blank" href="">关于万表</a>
+                            <a target="_blank" class="yel" href="">商务合作</a>
+                            <a target="_blank" href="">万表声明</a>
+                        </dd>
+                    </dl>
+
+                </div>
+                <div class="erweima fl">
+                    <img src="./img/erWeiMa.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div class="foot-bottom">
+                <!-- 友情链接 -->
+                <div class="friendlinks">
+                    <a href="">万表app</a>
+                    <a href="">万表名匠</a>
+                    <a href="">万表二手表</a>
+                    <a href="">新款手表</a>
+                    <a href="">高价回收</a>
+                    <a href="">热销</a>
+                    <a href="">天猫万表网旗舰店</a>
+                    <a href="">京东万表网旗舰店</a>
+                    <a href="">手表咨询</a>
+                    <a href="">天梭手表</a>
+                    <span>></span>
+                    <p class="morelinks">
+                        <a href="">浪琴手表</a>
+                        <a href="">欧米茄手表</a>
+                        <a href="">卡西欧手表</a>
+                        <a href="">卡地亚手表</a>
+                        <a href="">手表图片</a>
+                        <a href="">手表评论</a>
+                        <a href="">手表排行榜</a>
+                        <a href="">高价回收</a>
+                        <a href="">热销</a>
+                        <a href="">天猫万表网旗舰店</a>
+                        <a href="">京东万表网旗舰店</a>
+                        <a href="">手表咨询</a>
+                        <a href="">天梭手表</a>
+                    </p>
+                </div>
+                <!-- corp -->
+                <div class="corp">
+                    <p>
+                        万表网名表商城 版权所有 2009-2020
+                        <a href="">
+                            ICP备案证书号:粤ICP备09108738号-2
+                        </a>
+                        <a href="">
+                            营业执照
+                        </a>
+                        网监备案:4401060103141
+                    </p>
+
+                    <p>
+                        广州市万表科技股份有限公司Ⅰ广州市万表信息技术有限公司地址:广州市番禺区番禺大道北16号
+                    </p>
+
+                    <p>
+                        Copyright 2009-2020 wWW.WBIAO.CN.LTD ALL RIGHT RESERVED.
+                    </p>
+                </div>
+
+            </div>
+            <div class="tubiao">
+                <div class="tubiao-content">
+                    <a href="" title="红盾电子">
+                        <img src="./img/bottom.png" alt="">
+                    </a>
+                    <a href="" title="可信网站">
+                        <img src="./img/bottom1.png" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- 右侧固定局域栏 -->
+    <div id="wrap-talk">
+        <div id="talkbox">
+            <div class="talk">
+                <a href="" class="touxiang">
+                    <div class="talk-pop">
+                        <i class="iconfont"></i>
+                        <span></span>
+                        <div class="txt">
+                            <em>限时秒杀 保价11.11</em>
+                            <p>咨询客服享优惠 送精美礼品</p>
+                        </div>
+                        <ul>
+                            <li><b href="">选表咨询</b></li>
+                            <li><b href="">手表维修</b></li>
+                        </ul>
+                    </div>
+                </a>
+
+                <div class="pannel">
+                    <a href="" class="a1">
+                        <i class="icon1"></i>
+                        <span class="span1">购物车</span>
+                        <a href="" class="a2">
+                            <i class="icon2"></i>
+                            <span class="span2">收藏</span>
+                        </a>
+                        <a href="" class="a3">
+                            <i class="icon3"></i>
+                            <span class="span3">浏览足迹</span>
+                        </a>
+                        <a href="" class="a4">
+                            <i class="icon4"></i>
+                            <span class="span4">购物车</span>
+                        </a>
+                        <a href="" class="a5">
+                            <i class="icon5"></i>
+                            <span class="span5">返回顶部</span>
+                        </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

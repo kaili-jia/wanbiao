@@ -1,0 +1,119 @@
+
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+// body {
+//     line-height: 1;
+// }
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+
+input,
+a {
+    outline: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.hide {
+    display: none
+}
+
+// 使a出现下划线
+.text_line:hover {
+    text-decoration: underline;
+}
+
+em{
+    font-style: normal;
+}
+
+//把鼠标箭头改为手掌
+$cursor:pointer;
+
+// 解决高度塌陷的问题
+.clear_float:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+// 右上角加小红点
+.circle::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #b32424;
+    top: 8px;
+    right: -5px;
+}
+
+// 盒子划过出现的阴影
+.boxshadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .15);
+}
+$cursor:pointer;
