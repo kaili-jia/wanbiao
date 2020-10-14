@@ -186,7 +186,7 @@ $cursor:pointer;
         .top-right {
             // width: 510px;
             // background-color: rgb(238, 207, 212);
-
+           
             a {
                 line-height: 28px;
                 display: block;
@@ -1738,10 +1738,9 @@ $cursor:pointer;
                 width: 100%;
                 min-height: 900px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 align-content: flex-start;
                 flex-wrap: wrap;
-                background-color: pink;
 
                 a {
                     display: inline-block;
@@ -1749,6 +1748,7 @@ $cursor:pointer;
                     height: 313px;
                     margin-bottom: 12px;
                     background-color: white;
+                    margin-right: 9px;
 
                     .g-img {
                         position: relative;

@@ -1,27 +1,27 @@
 $(function ($) {
     var swiper = new Swiper('.swiper-container', {
-        effect : 'fade',
+        effect: 'fade',
         loop: true,
-        autoplay:true,
+        autoplay: true,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
         pagination: {
-          el: '.swiper-pagination',
-          clickable:true
+            el: '.swiper-pagination',
+            clickable: true
         }
-      });
+    });
 
-      var swiper2 = new Swiper('.swiper-container2', {
-        effect : 'slide',
+    var swiper2 = new Swiper('.swiper-container2', {
+        effect: 'slide',
         loop: true,
-        autoplay:true,
+        autoplay: true,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         }
-      });
+    });
 
     //main-clock_4  选项卡滑过
     var arr = $(".xxk li").get();
@@ -84,22 +84,74 @@ $(function ($) {
 
 
     // 固定在上方的div
-    $fixednav=$(".fixednav");
+    $fixednav = $(".fixednav");
     console.log($fixednav)
     $(window).scroll(function () {
-        console.log($(document).scrollTop());
-        if($(document).scrollTop()>=200){
+        // console.log($(document).scrollTop());
+        if ($(document).scrollTop() >= 200) {
             $fixednav.css({
-                display:"block"
+                display: "block"
             })
-        }else{
+        } else {
             $fixednav.css({
-                display:"none"
+                display: "none"
             })
         }
     }
     )
 
+    // 退出登陆
+    $exit=$(".exit");
+    $exit.click(function(){
+        // 清空当地记录
+        window.localStorage.clear();
+    }
+    )
+
+    // 猜你喜欢
+    // window.localStorage.clear();
+    var uid = localStorage.getItem("uid");
+    var url;
+    console.log(uid);
+    console.log(uid==43450)
+    if (uid == 43450) {
+        url = "http://jx.xuzhixiang.top/ap/api/productlist.php?uid=43450";
+    } else if (uid == null) {
+        url = "http://jx.xuzhixiang.top/ap/api/productlist.php?pagesize=20&pagenum=1";
+    }
+    $.get(url, res => {
+        console.log(res.data);
+        let html1 = "";
+        res.data.forEach((v, i) => {
+            console.log(v);
+            html1 += `
+                    <a class="boxshadow" href="../html/details.html" data-id=${v.pid}>
+                        <p class="g-img"> 
+                            <!--<img src="./img/goods.jpg" alt="">-->
+                            <img src="${v.pimg}" alt="">
+                        </p>
+                        <p class="p1">${v.pname}</p>
+                        <p class="p2">${v.pname}</p>
+                        <div class="fenqi">
+                            <em>月付</em>
+                            <span class="sp1">￥${(v.pprice/12).toFixed(2)}</span>
+                            <span class="sp2">￥${v.pprice}</span>
+                        </div>
+                    </a>
+            `
+
+        });
+        $con = $(".main-clock_7 .content");
+        $con.html(html1);
+
+        
+        $(".clock_7 a").click(function(){
+            var id=$(this).attr("data-id");
+            window.localStorage.setItem("pid",id);
+        })
+
+    })
 
 
+    
 })

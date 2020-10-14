@@ -1,12 +1,15 @@
 $cursor:pointer;
-#wrap-header{
+
+#wrap-header {
     width: 100%;
     background-color: #960607;
     position: relative;
-    #header{
+
+    #header {
         width: 1200px;
         margin: 0 auto;
     }
+
     a {
         display: block;
     }
@@ -23,5 +26,503 @@ $cursor:pointer;
         background-image: url("../img/a.png");
         background-position: -456px -414px;
         background-size: 589px;
+    }
+}
+
+#wrap-top {
+    width: 100%;
+}
+
+#top,
+#detail {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#wrap-top {
+    background-color: white;
+    color: #999;
+
+    #top {
+        height: 28px;
+        line-height: 28px;
+
+        .top-left {
+            a {
+                display: inline-block;
+                line-height: 28px;
+                color: #998c59;
+                margin-left: 10px;
+                margin-right: 30px;
+                cursor: $cursor;
+            }
+        }
+
+        .top-right {
+            // width: 510px;
+            // background-color: rgb(238, 207, 212);
+
+            a {
+                line-height: 28px;
+                display: block;
+                float: left;
+                cursor: $cursor;
+                padding: 0 10px;
+                color: #999;
+
+                &:hover {
+                    color: black;
+                }
+            }
+
+            .top-login {
+                a:nth-child(2) {
+                    color: #ae0f17;
+                }
+            }
+
+            .top-others {
+                .fenGe {
+                    color: #ddd;
+                    margin: 0 8px;
+                    float: left;
+                }
+            }
+        }
+    }
+
+    #detail {
+        height: 732px;
+        // border: 1px solid red;
+
+        .detail-left {
+            position: relative;
+            background-color: #fff;
+            // padding: 9px;
+            height: 627px;
+            width: 500px;
+
+            .left-img {
+                width: 498px;
+                height: 498px;
+                border: 1px solid #eee;
+                position: relative;
+                overflow: hidden;
+                display: table-cell;
+                vertical-align: middle;
+
+                #pimg {
+                    width: 480px;
+                    height: 480px;
+                }
+
+                .bott-img {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    width: 100%;
+                    z-index: 1;
+
+                    img {
+                        position: relative;
+                        width: auto;
+                        height: auto;
+                        max-width: 480px;
+                        max-height: 480px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        .detail-right {
+            width: 670px;
+            height: 731px;
+
+            #pname {
+                font-size: 16px;
+                color: #333;
+                font-weight: 700;
+                line-height: 21px;
+                margin-bottom: 7px;
+                margin-top: 20px;
+                padding-left: 10px;
+            }
+
+            .clockstyle {
+                font-size: 12px;
+                color: #cc9166;
+                line-height: 16px;
+                padding-left: 10px;
+                font-weight: 700;
+
+                span {
+                    font-size: 12px;
+                    color: #666;
+                    margin-left: 8px;
+                    cursor: pointer;
+                    font-weight: 400;
+                }
+            }
+
+            .model {
+                margin-top: 24px;
+                font-size: 12px;
+                color: #999;
+                line-height: 16px;
+                padding-left: 10px;
+                margin-bottom: 8px;
+
+                .model-a {
+                    width: 260px;
+                }
+
+                .model-b {
+                    width: 150px;
+                }
+
+                .model-c {
+                    width: 150px;
+                }
+            }
+
+            .price {
+                position: relative;
+                padding: 16px 0 26px 0;
+                background: #f1f1f1;
+                display: block;
+                border-radius: 4px;
+
+                .fenqi {
+                    margin-left: 16px;
+                    margin-top: 11px;
+                    margin-bottom: 4px;
+                    position: relative;
+
+                    .fenqi-left {
+                        width: 36px;
+                        line-height: 18px;
+                        color: #e65c5c;
+                        font-size: 12px;
+                        text-align: right;
+                        position: absolute;
+                        font-weight: 700;
+                        bottom: 0;
+                    }
+
+                    .fenqi-right {
+                        margin-left: 50px;
+                        line-height: 16px;
+                        cursor: pointer;
+                        color: #666;
+
+                        .fenqi-price {
+                            font-size: 12px;
+                            color: #666;
+                            font-weight: 700;
+
+                            em {
+                                position: relative;
+                                right: -2px;
+                                font-size: 16px;
+                                color: #e65c5c;
+                                font-weight: 700;
+                            }
+
+                            i {
+                                font-size: 28px;
+                                color: #e65c5c;
+                                font-family: DIN-Bold;
+                                margin-right: 5px;
+                                font-style: normal;
+                            }
+                        }
+
+                        .mianxi {
+                            font-size: 12px;
+                            margin-left: 10px;
+                            margin-right: 5px;
+                            color: #999;
+                            font-weight: 700;
+
+                            i {
+                                display: inline-block;
+                                position: relative;
+                                top: 3px;
+                                // display: block;
+                                background-image: url(../img/a.png);
+                                background-position: -48px -537px;
+                                background-size: 589px;
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .allprice {
+                    margin-left: 16px;
+                    position: relative;
+
+                    .allprice-left {
+                        width: 36px;
+                        color: #999;
+                        font-size: 12px;
+                        text-align: right;
+                        position: absolute;
+                        bottom: 3px;
+                    }
+
+                    .allprice-right {
+                        margin: 2px 0;
+                        margin-left: 52px;
+                        position: relative;
+
+                        em {
+                            position: relative;
+                            right: -2px;
+                            font-weight: 700;
+                            font-size: 14px;
+                            color: #444;
+                        }
+
+                        #pprice {
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #444;
+                            margin-left: -2px;
+                            margin-right: 5px;
+                            font-family: DIN;
+                        }
+
+                        span {
+                            color: #999;
+                        }
+                    }
+                }
+
+                .cuxiao {
+                    margin-left: 16px;
+                    margin-top: 11px;
+                    margin-bottom: 4px;
+                    position: relative;
+
+                    .cuxiao-left {
+                        top: 0;
+
+                        width: 36px;
+                        line-height: 18px;
+                        color: #e65c5c;
+                        font-size: 12px;
+                        text-align: right;
+                        position: absolute;
+                        font-weight: 700;
+                        bottom: 0;
+                    }
+
+                    .cuxiao-right {
+                        margin-left: 50px;
+                        line-height: 16px;
+                        cursor: pointer;
+                        color: #666;
+
+                        a {
+                            width: 100%;
+                            display: block;
+                            margin-bottom: 6px;
+                            text-decoration: none;
+                            color: #666;
+                            line-height: 1.5;
+                            cursor: pointer;
+
+                            .sp1 {
+                                font-size: 12px;
+                                color: #cc5252;
+                                font-weight: 700;
+                            }
+
+                            .sp2 {
+                                font-size: 12px;
+                                color: #cc5252;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .peisong {
+                margin-top: 20px;
+                margin-left: 16px;
+                position: relative;
+
+                .pei-left {
+                    width: 36px;
+                    line-height: 16px;
+                    color: #999;
+                    font-size: 12px;
+                    text-align: right;
+                    position: absolute;
+                    bottom: 0;
+                }
+
+                .pei-right {
+                    margin-left: 52px;
+                    color: #666;
+                    font-size: 12px;
+                    line-height: 16px;
+
+                    i {
+                        font-style: normal;
+                        color: #ccaa7a;
+                    }
+                }
+            }
+
+            .promise {
+                margin-top: 20px;
+                margin-left: 16px;
+                position: relative;
+
+                .promise-left {
+                    width: 36px;
+                    line-height: 16px;
+                    color: #999;
+                    font-size: 12px;
+                    text-align: right;
+                    position: absolute;
+                    top: 0;
+                }
+
+                .promise-right {
+                    margin-left: 52px;
+                    color: #666;
+                    font-size: 12px;
+                    line-height: 16px;
+                    width: 560px;
+
+                    li {
+                        float: left;
+                        font-size: 12px;
+                        color: #666;
+                        line-height: 16px;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                        position: relative;
+
+                        i {
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 4px;
+                            background: #ccaa7a;
+                            display: inline-block;
+                            margin-right: 4px;
+                            vertical-align: middle;
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+            }
+
+            // 数量
+            .number {
+                margin-top: 64px;
+                margin-left: 16px;
+
+                .number-left {
+                    color: #999;
+                    font-size: 12px;
+                    line-height: 20px;
+                    width: 36px;
+                    text-align: right;
+                }
+
+                .number-right {
+                    height: 20px;
+                    display: block;
+                    margin-left: 16px;
+
+                    span {
+                        display: inline-block;
+                        width: 19px;
+                        height: 19px;
+                        text-align: center;
+                        border: 1px solid #ccc;
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #999;
+                        cursor: pointer;
+                    }
+
+                    #count {
+                        padding: 0;
+                        border: 0;
+                        outline: 0;
+                        display: inline-block;
+                        width: 48px;
+                        height: 19px;
+                        text-align: center;
+                        font-size: 12px;
+                        line-height: 19px;
+                        color: #333;
+                        border-top: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                    }
+                }
+            }
+
+            // 购买
+            .buy-btn {
+                margin-top: 24px;
+                position: relative;
+
+                .page {
+                    width: 180px;
+                    height: 44px;
+                    line-height: 44px;
+                    font-size: 14px;
+                    color: #fff;
+                    background-color: #cc5252;
+                    background-image: linear-gradient(90deg, #cc5252 3%, #b32424 100%);
+                    margin-left: 10px;
+                    text-align: center;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+
+                .shopCart {
+                    width: 120px;
+                    height: 42px;
+                    color: #666;
+                    border: 1px solid #ccc;
+                    text-align: center;
+                    background-image: none;
+                    background-color: #fff;
+                    margin-left: 10px;
+                }
+
+                .code {
+                    cursor: pointer;
+                    position: relative;
+
+                    .iconfont {
+                        margin: 2px 0 0 26px;
+                        display: block;
+                        background-image: url(../img/d.png);
+                        background-position: -443px -367px;
+                        background-size: 475px;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    .text {
+                        margin: 6px 0 0 12px;
+                        font-size: 12px;
+                        color: #666;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
     }
 }

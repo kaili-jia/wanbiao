@@ -1,0 +1,215 @@
+$cursor:pointer;
+
+#wrap-header {
+    background-color: #960607;
+    position: relative;
+
+    #header {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    a {
+        display: block;
+    }
+
+    div {
+        position: absolute;
+        top: 50%;
+        right: 44px;
+        margin-top: -16px;
+        margin-left: -16px;
+        cursor: $cursor;
+        width: 32px;
+        height: 32px;
+        background-image: url("../img/a.png");
+        background-position: -456px -414px;
+        background-size: 589px;
+    }
+}
+
+#wrap-top,
+#wrap-search,
+#wrap-main {
+    width: 100%;
+}
+
+#top,
+#search,
+#main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#wrap-top {
+    background-color: white;
+    color: #999;
+
+    #top {
+        height: 28px;
+        line-height: 28px;
+
+        .top-left {
+            a {
+                display: inline-block;
+                line-height: 28px;
+                color: #998c59;
+                margin-left: 10px;
+                margin-right: 30px;
+                cursor: $cursor;
+            }
+        }
+
+        .top-right {
+            // width: 510px;
+            // background-color: rgb(238, 207, 212);
+
+            a {
+                line-height: 28px;
+                display: block;
+                float: left;
+                cursor: $cursor;
+                padding: 0 10px;
+                color: #999;
+
+                &:hover {
+                    color: black;
+                }
+            }
+
+            .top-login {
+                a:nth-child(2) {
+                    color: #ae0f17;
+                }
+            }
+
+            .top-others {
+                .fenGe {
+                    color: #ddd;
+                    margin: 0 8px;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+#wrap-search {
+    height: 115px;
+    background-color: #FFFFFF;
+
+    #search {
+        height: 100%;
+
+        .search-left {
+            width: 404px;
+
+            a {
+                display: block;
+            }
+
+            .wb-logo {
+                margin-top: 18px;
+                width: 121px;
+                font-size: 0;
+            }
+
+            >a {
+                margin-top: 18px;
+            }
+        }
+    }
+}
+
+em {
+    font-style: normal;
+}
+
+#main {
+    position: relative;
+    width: 990px;
+    margin: 20px auto 0;
+    padding-bottom: 180px;
+
+    >h2 {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #333;
+        font-weight: 700;
+
+    }
+
+    .login-tips {
+        height: 30px;
+        background-color: #fff9ce;
+        color: #666;
+        font-size: 12px;
+        line-height: 30px;
+        text-indent: 14px;
+    }
+
+    .cart-nav {
+        height: 34px;
+        line-height: 34px;
+        background: #f5f5f5;
+        color: #666;
+        margin-bottom: 20px;
+
+        dl dt {
+            position: relative;
+            width: 50px;
+            height: 34px;
+            display: block;
+            float: left;
+
+            span {
+                position: absolute;
+                top: 12px;
+                left: 16px;
+                cursor: pointer;
+            }
+
+            .icon-check1 {
+                display: block;
+                background-image: url(../img/a.png);
+                background-position: -576px -255px;
+                background-size: 589px;
+                width: 12px;
+                height: 12px;
+            }
+
+            .icon-check2 {
+                display: none;
+                background-image: url(../img/a.png);
+                background-position: -576px -233px;
+                background-size: 589px;
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        dd {
+            display: block;
+            float: left;
+        }
+
+        .all_txt {
+            width: 90px;
+            margin-right: 20px;
+        }
+
+
+        ul {
+            width: 576px;
+
+            li {
+                width: 120px;
+                margin-left: 24px;
+                text-align: center;
+                display: block;
+                float: left;
+            }
+        }
+    }
+}

@@ -1,23 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>详情页</title>
 
-    <link rel="stylesheet" href="../css/details.css">
-    <link rel="stylesheet" href="../css/public.css">
-
-
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
-    <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/details.js"></script>
-</head>
-<body>
-    
-    <div id="wrap-header">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/details.css">
 
+  
+    <!-- <link rel="stylesheet" href="../css/swiper-bundle.min.css"> -->
+    <!-- <script src="../js/swiper-bundle.min.js"></script> -->
+   
+</head>
+
+<body>
+
+    <div id="wrap-header">
+        <a target="_blank" href="">
+            <img id="header" src="../img/header.jpg" alt="">
+        </a>
+        <div>
+
+        </div>
     </div>
+    <div id="wrap-top">
+        <div id="top">
+            <div class="top-left fl">
+                <a target="_blank" href="html/details.html">正品保障，免息分期！</a>
+            </div>
+            <div class="top-right fr">
+                <div class="top-login fl">
+                    <a class="text_line" href="./html/login.html">请登录</a>
+                    <a class="text_line" href="./html/register.html">注册即送3500元大礼包</a>
+                </div>
+
+                <div class="top-others fl">
+                    <span class="fenGe">|</span>
+                    <a class="text_line" target="_blank" href="" class="fl">购物车</a>
+                    <div class="server fl">
+                        <a target="_blank" href="">客户服务</a>
+                    </div>
+                    <a class="text_line" target="_blank" href="" class="fl">会员福利</a>
+                    <span class="fenGe">|</span>
+                    <a class="text_line" target="_blank" href="" class="fl">ENGLISH</a>
+                </div>
+
+            </div>
+        </div>
+        <div id="detail">
+            <!-- <div class="detail-left fl">
+                <div class="left-img">
+                    <img id="pimg" src="../img/detail-left.jpg" alt="">
+                    <div class="bott-img">
+                        <img src="../img/bot-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="detail-right fr">
+                <div id="pname" class="title">
+                    美度手表
+                </div>
+                <div class="clockstyle">
+                    手表的风格
+                    <span>咨询优惠>></span>
+                </div>
+                <div class="model clear_float">
+                    <div class="model-a fl ">
+                        <span>型号:</span>
+                        <span>xinghao1</span>
+                    </div>
+                    <div class="model-b fl">
+                        <span>编号:</span>
+                        <span id="pid">编号1</span>
+                    </div>
+                    <div class="model-c fl">
+                        <span>品牌:</span>
+                        <span>品牌1</span>
+                    </div>
+                    <div class="model-d fr">
+                        <span>销量:</span>
+                        <span id="pdesc">销量1</span>
+                    </div>
+                </div>
+
+                价格
+                <div class="price">
+                    <div class="fenqi">
+                        <div class="fenqi-left">分期</div>
+                        <div class="fenqi-right">
+                            <span class="fenqi-price">
+                                <em>￥</em>
+                                <i id="fenqi-pprice">pprice/12</i>
+                                ×12期
+                            </span>
+                            <span class="mianxi">
+                                <i></i>
+                                免息免手续费
+                            </span>
+                        </div>
+                    </div>
+                    <div class="allprice">
+                        <div class="allprice-left">万表价</div>
+                        <div class="allprice-right">
+                            <em>￥</em>
+                            <span id="pprice">商品价格</span>
+                            <span>市场价 ￥6300</span>
+                        </div>
+                    </div>
+                    <div class="cuxiao clear_float">
+                        <p class="cuxiao-left fl">促销</p>
+                        <div class="cuxiao-right fl">
+                            <a href="">
+                                <span class="sp1">[满减]</span>
+                                <span class="sp2">每满500减300</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="peisong clear_float">
+                    <div class="pei-left fl">
+                        配送
+                    </div>
+                    <div class="pei-right fl">
+                        <i>(顺丰包邮)</i>
+                        预计4-8个工作日内发货
+                    </div>
+                </div>
+                <div class="promise clear_float">
+                    <div class="promise-left fl">
+                        承诺
+                    </div>
+                    <div class="promise-right fl">
+                        <li>
+                            <i></i>
+                            <span>正品保障</span>
+                        </li>
+                        <li>
+                            <i></i>
+                            <span>正规发票</span>
+                        </li>
+                        <li>
+                            <i></i>
+                            <span>假一赔三</span>
+                        </li>
+                        <li>
+                            <i></i>
+                            <span>7天退换</span>
+                        </li>
+                        <li>
+                            <i></i>
+                            <span>全球联保</span>
+                        </li>
+                    </div>
+                </div>
+
+
+                数量
+                <div class="number clear_float">
+                    <div class="number-left fl">
+                        数量
+                    </div>
+                    <div class="number-right fl clear_float">
+                        <span class="reduce fl">-</span>
+                        <input class="fl" type="text" value="1" id="count">
+                        <span class="add fl">+</span>
+                    </div>
+                </div>
+
+                购买
+                <div class="buy-btn">
+                    <div class="purchase page fl">
+                        立即购买
+                    </div>
+                    <div class="shopCart page fl">
+                        加入购物车
+                    </div>
+                    <div class="code fl">
+                        <p class="iconfont"></p>
+                        <p class="text">
+                            手机购买
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
 </body>
+
 </html>

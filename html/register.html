@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册页面</title>
     <link rel="stylesheet" href="../css/register.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="../js/register.js"></script>
 </head>
 
 <body>
@@ -28,14 +30,15 @@
                     <div class="box">
                         <p>
                             <em class="iconfont phone"></em>
-                            <input type="text" class="ti" id="mobile" placeholder="请输入手机号" maxlength="11">
+                            <input type="text" class="ti" id="username" placeholder="请输入用户名" maxlength="11">
                         </p>
                         <i></i>
                     </div>
                     <div class="box">
                         <p>
                             <em class="iconfont code"></em>
-                            <input type="text" class="ti imgcount fl" id="mobile" placeholder="请输入图形验证码" maxlength="11">
+                            <input type="text" class="ti imgcount fl" id="imgcount" placeholder="请输入图形验证码"
+                                maxlength="11">
                             <img src="../img/captcha2.png" alt="验证码" title="点击获取验证码" class="r_imgcount fr">
                         </p>
                         <i></i>
@@ -43,16 +46,16 @@
                     <div class="box">
                         <p>
                             <em class="iconfont code"></em>
-                            <input type="text" class="ti yzm fl" id="mobile" placeholder="请输入短信验证码" maxlength="6">
+                            <input type="text" class="ti yzm fl" id="yzm" placeholder="请输入短信验证码" maxlength="6">
                             <input type="button" class="yzmTxt " title="点击获取验证码" value="获取验证码">
-                            
+
                         </p>
                         <i></i>
                     </div>
                     <div class="box">
                         <p>
                             <em class="iconfont pwd"></em>
-                            <input type="password" class="ti" id="mobile" placeholder="请设置密码" maxlength="20">
+                            <input type="password" class="ti" id="pwd" placeholder="请设置密码" maxlength="20">
                             <span class="ico eye-close"></span>
                         </p>
                         <i></i>
@@ -60,12 +63,12 @@
                     <div class="box">
                         <p>
                             <em class="iconfont pwd"></em>
-                            <input type="password" class="ti" id="mobile" placeholder="请再次输入密码" maxlength="20">
+                            <input type="password" class="ti" id="repwd" placeholder="请再次输入密码" maxlength="20">
                             <span class="ico eye-close"></span>
                         </p>
                         <i></i>
                     </div>
-                    <a href="" class="register" id="register">立即注册</a>
+                    <a  class="register" id="register">立即注册</a>
                     <p class="condition">
                         点击立即注册，即表示您同意并愿意遵守
                         <a target="_blank" href="https://wbiao.com/help-25.html">万表用户协议</a>

@@ -1,0 +1,77 @@
+.main-clock_7 {
+    min-height: 1000px;
+    margin-top: 20px;
+    .content {
+        width: 100%;
+        min-height: 900px;
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        // background-color: pink;
+        a {
+            display: inline-block;
+            width: 291px;
+            height: 313px;
+            margin-bottom: 12px;
+            background-color: white;
+            margin-right: 9px;
+
+            .g-img {
+                position: relative;
+                width: 223px;
+                height: 223px;
+                margin: 16px 34px 12px;
+                overflow: hidden;
+                img{
+                    width: 223px;
+                    height: 223px;
+                }
+            }
+
+            .p1 {
+                color: #666;
+                font-weight: 700;
+                margin-bottom: 8px;
+                text-align: center;
+                line-height: 12px;
+            }
+            .p2{
+                width: 80%;
+                margin: 0 auto;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                line-height: 14px;
+                color: #999;
+                font-size: 12px;
+                text-align: center;
+
+            }
+            .fenqi{
+                margin-top: 8px;
+                line-height: 12px;
+                color: #999;
+                text-align: center;
+                em{
+                    font-style: normal;
+                    position: relative;
+                    top: -2px;
+                    display: inline-block;
+                    padding: 2px;
+                    background: linear-gradient(270deg,#ff8080 0,#e65c5c 100%);
+                    border-radius: 2px;
+                    color: #fff;
+                }
+                .sp1{
+                    margin-right: 10px;
+                    margin-left: 2px;
+                    font-size: 16px;
+                    font-family: DIN-Bold;
+                    color: #e65c5c;
+                }
+                
+            }
+        }
+    }
+}
