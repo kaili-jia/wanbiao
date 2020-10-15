@@ -130,6 +130,7 @@ em {
     width: 990px;
     margin: 20px auto 0;
     padding-bottom: 180px;
+    min-height: 900px;
 
     >h2 {
         height: 40px;
@@ -163,7 +164,7 @@ em {
             display: block;
             float: left;
 
-            span {
+            input {
                 position: absolute;
                 top: 12px;
                 left: 16px;
@@ -172,18 +173,6 @@ em {
 
             .icon-check1 {
                 display: block;
-                background-image: url(../img/a.png);
-                background-position: -576px -255px;
-                background-size: 589px;
-                width: 12px;
-                height: 12px;
-            }
-
-            .icon-check2 {
-                display: none;
-                background-image: url(../img/a.png);
-                background-position: -576px -233px;
-                background-size: 589px;
                 width: 12px;
                 height: 12px;
             }
@@ -209,6 +198,217 @@ em {
                 text-align: center;
                 display: block;
                 float: left;
+            }
+        }
+    }
+
+
+    .goods {
+        position: relative;
+        padding-top: 15px;
+
+        .goods-right {
+            position: relative;
+            margin-left: 50px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgb(189, 187, 187);
+
+            .select_tik {
+                position: absolute;
+                top: 50%;
+                margin-top: -6px;
+                width: 12px;
+                height: 12px;
+                left: -34px;
+
+                input {
+                    position: absolute;
+                    cursor: pointer;
+                }
+
+                .icon-check1 {
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                }
+
+            }
+
+            >a {
+                width: 360px;
+                display: block;
+            }
+
+            .goods-img {
+                position: relative;
+                width: 90px;
+                height: 90px;
+                overflow: hidden;
+                text-align: center;
+
+                img {
+                    width: 90px;
+                    height: 90px;
+                    display: inline-block;
+                    border: 0;
+                }
+            }
+
+            .goods-txt {
+                width: 250px;
+                margin-top: 5px;
+                margin-left: 20px;
+
+                .p1 {
+                    color: #666;
+                    line-height: 22px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+
+            ul {
+                height: 20px;
+                line-height: 20px;
+                margin-top: 6px;
+
+                li {
+                    display: block;
+                    float: left;
+                    width: 120px;
+                    color: #666;
+                    text-align: center;
+                    margin-left: 24px;
+                }
+
+                .goods-num {
+                    margin-left: 44px;
+                    margin-right: 24px;
+                    width: 76px;
+                    height: 18px;
+                    line-height: 17px;
+                    border: 1px solid #ddd;
+                    color: #333;
+                    text-align: center;
+
+                    span {
+                        float: left;
+                        width: 16px;
+                        height: 18px;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+
+                    .num {
+                        border: 0;
+                        border-left: 1px solid #ddd;
+                        border-right: 1px solid #ddd;
+                        width: 42px;
+                        height: 17.5px;
+                        float: left;
+                        text-align: center;
+                        padding: 0;
+                    }
+                }
+
+                .total-price {
+                    font-weight: 700;
+                }
+
+                .others a {
+                    display: block;
+                    text-align: center;
+                    color: #999;
+                    line-height: 22px;
+                }
+            }
+        }
+
+
+        .bottom {
+            // position: absolute;
+            // bottom: 100px;
+            width: 990px;
+            height: 60px;
+            line-height: 60px;
+            background: #f2f2f2;
+
+            ul li {
+                display: inline-block;
+                color: #666;
+                margin-right: 28px;
+            }
+
+            .select_tik {
+                position: relative;
+                width: 50px;
+                height: 60px;
+                margin-right: 0;
+
+                input {
+                    position: absolute;
+                    top: 24px;
+                    left: 16px;
+                    cursor: pointer;
+                }
+
+                .icon-check1 {
+                    display: block;
+                    // background-image: url(../img/a.png);
+                    // background-position: -576px -255px;
+                    // background-size: 589px;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+
+            a{
+                color: #666;
+            }
+
+            .deleteall{
+                a{
+                    color: #666;
+                }
+            }
+            .choose {
+                margin-left: 133px;
+
+                em {
+                    color: #cc5252;
+                }
+            }
+
+            .accounts-btn {
+                float: right;
+                width: 180px;
+                background: #cc5252;
+                font-weight: 700;
+                margin-right: 0;
+                text-align: center;
+                font-size: 14px;
+                a{
+                    display: block;
+                    color: #fff;
+                    font-size: 14px;
+                }
+            }
+
+            .allprice {
+                line-height: 18px;
+                text-align: right;
+
+                p {
+                    font-size: 14px;
+                    margin-top: 12px;
+
+                    span {
+                        color: #cc5252;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
             }
         }
     }

@@ -178,6 +178,10 @@ $(function ($) {
             var num = Number($("#count").val());
             var url1 = `http://jx.xuzhixiang.top/ap/api/add-product.php?uid=${uid}&pid=${pid}&pnum=${num}`;
             console.log(url1)
+            $.get(url1,res=>{
+                console.log(res);
+                alert(res.msg);
+            })
         })
 
     })

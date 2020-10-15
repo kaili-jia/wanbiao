@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>购物车</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="../js/shopcart.js"></script>
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/shopcart.css">
 </head>
@@ -72,11 +74,10 @@
             </div>
 
             <!-- cart-nav -->
-            <div class="cart-nav">
+            <div class="cart-nav clear_float">
                 <dl class="fl clear_float">
                     <dt class="select_tik">
-                        <span class="icon-check1"></span>
-                        <span class="icon-check2"></span>
+                        <input type="checkbox" id="allchecked-top" class="icon-check1">
                     </dt>
                     <dd class="all_txt">全选</dd>
                     <dd class="msg_txt">商品信息</dd>
@@ -91,10 +92,80 @@
                 </ul>
             </div>
 
-            <div class="goods">
-                <div class="goods-righth">
-                    
+            <div class="goods fl">
+                <!-- <div class="goods-right clear_float">
+                    <span class="select_tik">
+                        <i class="icon-check1"></i>
+                        <i class="icon-check2"></i>
+                    </span>
+                    <a href="" class="clear_float fl ">
+                        <div class="goods-img fl">
+                            <img id="pimg" src="../img/clock-1.jpg" alt="">
+                        </div>
+                        <div class="goods-txt fl">
+                            <div class="goods-a">
+                                <p class="p1" id="pname">111</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <ul class="fr">
+                        <li class="price" id="pprice">
+                            ￥
+                            <em>11</em>
+                        </li>
+                        <li class="goods-num">
+                            <span class="reduce fl">-</span>
+                            <input class="num fl" type="text" value="1" id="count">
+                            <span class="add fl">+</span>
+                        </li>
+                        <li class="total-price">
+                            ￥
+                            <em class="total">11</em>
+                        </li>
+                        <li class="others">
+                            <a id="pid" href="" class="delete-goods">删除</a>
+                            <a href="">移入收藏</a>
+                        </li>
+
+                    </ul>
                 </div>
+                -->
+
+                <div class="bottom">
+                    <ul class="clear_float">
+                        <li class="select_tik fl">
+                            <input type="checkbox" id="allchecked-bot" class="icon-check1">
+                        </li>
+                        <li class="all_txt fl">
+                            <a>全选</a>
+                        </li>
+                        <li class="deleteall fl">
+                            <a >删除</a>
+                        </li>
+                        <li class="fl">
+                            <a>移入收藏</a>
+                        </li>
+                        <li class="fl">
+                            <a>清空失效商品</a>
+                        </li>
+                        <li class="choose fl">
+                            已选商品
+                            <em class="selectNum">1</em>
+                            件
+                        </li>
+                        <li class="accounts-btn fl">
+                            <a>结算</a>
+                        </li>
+                        <li class="allprice fr">
+                            <p>合计：
+                                <span id="allprice">￥0</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+
 
             </div>
         </div>
