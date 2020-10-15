@@ -13,6 +13,16 @@ $(function ($) {
         }
     });
 
+    //鼠标滑进 停止轮播
+    var comtainer = document.querySelector('.swiper-container');
+    comtainer.onmouseenter = function () {
+        swiper.autoplay.stop();
+    };
+    // 鼠标离开 继续轮播
+    comtainer.onmouseleave = function () {
+        swiper.autoplay.start();
+    }
+
     var swiper2 = new Swiper('.swiper-container2', {
         effect: 'slide',
         loop: true,
@@ -22,6 +32,16 @@ $(function ($) {
             prevEl: '.swiper-button-prev',
         }
     });
+
+    //鼠标滑进 停止轮播
+    var comtainer = document.querySelector('.swiper-container2');
+    comtainer.onmouseenter = function () {
+        swiper2.autoplay.stop();
+    };
+    // 鼠标离开 继续轮播
+    comtainer.onmouseleave = function () {
+        swiper2.autoplay.start();
+    }
 
     //main-clock_4  选项卡滑过
     var arr = $(".xxk li").get();

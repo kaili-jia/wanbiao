@@ -2072,13 +2072,11 @@ body {
                     background-size: 475px;
                     width: 57px;
                     height: 66px;
-                }
-
-                &:hover .talk-pop {
-                    display: block;
-                    opacity: 1;
-                }
-
+                    &:hover .talk-pop {
+                        display: block;
+                        opacity: 1;
+                    }
+                
                 .talk-pop {
                     display: none;
                     width: 300px;
@@ -2198,7 +2196,7 @@ body {
                         }
                     }
                 }
-
+            }
                 .pannel {
                     width: 44px;
                     height: 120px;
@@ -2226,6 +2224,7 @@ body {
                         }
 
                         span {
+                            color: black;
                             display: none;
                             position: absolute;
                             top: 13px;
